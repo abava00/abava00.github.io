@@ -13,6 +13,7 @@ github_username: abava00
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-toc
 
 # enable collection
 collections:
