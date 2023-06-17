@@ -2,7 +2,7 @@
 layout: default
 title: Collection test page
 ---
-# This page is collection test page.
+# このページはコレクション機能のテストページです
 
 <ul>
   {% for count in site.test %}
