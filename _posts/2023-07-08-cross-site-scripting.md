@@ -9,7 +9,7 @@ toc: true
 
 攻撃者がWebページ上で，任意のスクリプトを実行させることができる攻撃．
 
-![攻撃概要]({{site.baseurl}}/images/xss/intro.png)
+![攻撃概要](https://user-images.githubusercontent.com/60212516/251808017-0fafb7e6-82d8-4faa-aae0-ab1ec0d68f66.png)
 *XSSの攻撃フロー<br>思いついたのをなんとなく描いただけなので実際に動くかはわからないです*
 
 
@@ -24,7 +24,7 @@ HTTPリクエストのパラメータ(URLのクエリストリングとかinput�
 HTTPリクエストにスクリプトを仕込ませて，そのHTTPレスポンスの中でスクリプトを実行させる攻撃．<br>
 URLの中にスクリプトを仕込むことで，URLを開くだけでスクリプトを実行させることができる．
 
-![攻撃概要]({{site.baseurl}}/images/xss/reflect.png)
+![攻撃概要](https://user-images.githubusercontent.com/60212516/251808039-75562020-d1b0-4943-8b94-e47b16c585ca.png)
 *反射型XSSの概要*
 
 
@@ -46,3 +46,5 @@ javascriptなどでHTML要素を生成する関数にスクリプトを仕込ま
 :-:|:-:
 document.write|好きなタグを生成できる．
 innnerHTML|scriptタグは生成できない． imgタグとかを使う
+
+<script>alert("test alert")</script>
