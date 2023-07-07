@@ -9,16 +9,23 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ないよ
 github_username: abava00
 
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-toc
+  # - jekyll-paginate
 
 # enable collection
 collections:
   test:
     output: true
+
+
+# pagination
+# paginate: 1
+# paginate_path: "/pages/page:num/"
 
 # Exclude from processing.
 # exclude:

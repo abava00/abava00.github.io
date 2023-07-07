@@ -34,6 +34,20 @@ layout: base
     {%- include disqus_comments.html -%}
   {%- endif -%}
 
+  <style>
+  img {
+    border: 0.5rem outset black;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  img+em{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+</style>
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
