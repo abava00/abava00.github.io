@@ -1,0 +1,49 @@
+<html>
+<form action="#" method="post">
+  <label for="cc-number">クレジットカード番号</label>
+  <input type="text" autocomplete="cc-number" id="cc-number" inputmode="numeric"  pattern="[\d ]{14,16}" title="14〜16桁の番号を入力してください" placeholder=" " required>
+
+  <label for="cc-csc">セキュリティコード</label>
+  <input type="text" autocomplete="cc-csc" id="cc-csc" placeholder=" " required>
+
+  <label for="cc-exp">有効期限</label>
+  <input type="text" autocomplete="cc-exp" id="cc-exp" placeholder=" " required>
+
+</form>
+
+
+<style>
+  body {
+  display: grid;
+  place-items: center;
+  padding: 5vh 2vw;
+}
+
+form {
+  label {
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 0.25em;
+
+    &:not(:first-child) {
+      margin-top: 0.75em;
+    }
+  }
+
+  input {
+    display: block;
+    width: 30vw;
+    min-width: 240px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 14px;
+
+    &:not(:placeholder-shown):invalid {
+      border-color: red;
+      color: red;
+    }
+  }
+}
+  </style>
+</html>
